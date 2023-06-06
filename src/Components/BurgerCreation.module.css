@@ -31,7 +31,7 @@
   border-radius: 23px;
   border: solid 3px black;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-  rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   color: black;
   display: flex;
   flex-direction: row;
@@ -47,7 +47,7 @@
 }
 
 .ingredientBtnSelected {
-  background-color: rgb(183, 255, 0);
+  background-color: rgba(116, 223, 116, 1);
 }
 
 h1 {
@@ -206,7 +206,6 @@ img {
     min-width: 70px;
     padding: 9px 10px 7px;
     width: 8%;
-
   }
 
   .bottomBtns {
