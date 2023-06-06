@@ -1,0 +1,230 @@
+.ingredientsBtnsBox {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 20%;
+  justify-content: center;
+  position: relative;
+  top: 50px;
+  width: 100%;
+  z-index: 3;
+}
+
+.firstBlock {
+  height: 30%;
+  top: 60px;
+}
+
+.secondBlock {
+  align-items: center;
+  bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  justify-content: flex-end;
+  margin-top: 100px;
+}
+
+.ingredientBtn {
+  align-items: center;
+  background-color: #f9a332;
+  border-radius: 23px;
+  border: solid 3px black;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+  rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  justify-content: center;
+  margin: 10px;
+  min-width: 100px;
+  padding: 10px 10px 7px;
+  text-decoration: none;
+  width: 10%;
+}
+
+.ingredientBtnSelected {
+  background-color: rgb(183, 255, 0);
+}
+
+h1 {
+  color: black;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+
+.creationBox {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  overflow: hidden;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.additions {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+}
+
+.doneBtn {
+  margin-top: 50px;
+  width: 180px;
+}
+
+.bottomBtns {
+  display: flex;
+  text-align: center;
+}
+
+.meat {
+  animation: myAnim 1s ease 0s 1 normal forwards;
+  position: relative;
+  transition: all 0.5s ease-out;
+  z-index: 1;
+}
+.cheese {
+  animation: myAnim 1s ease 0s 1 normal forwards;
+  position: absolute;
+  transition: all 0.5s ease-out;
+  z-index: 3;
+}
+
+.tomatoe {
+  animation: myAnim 1s ease 0s 1 normal forwards;
+  opacity: 1;
+  position: relative;
+}
+.lettuce {
+  animation: myAnim 1s ease 0s 1 normal forwards;
+  position: absolute;
+  z-index: 2;
+}
+
+img {
+  width: 250px;
+}
+
+.ingredientHideA {
+  animation: FadeOut 0.2s ease-in 0s 1 normal both;
+}
+
+.ingredientHide {
+  display: none;
+  visibility: hidden;
+}
+
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateY(-655px);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes FadeOut {
+  0% {
+    opacity: 1;
+    position: absolute;
+    transform: translateY(0px);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translateY(150px);
+  }
+  100% {
+    opacity: 0;
+    position: absolute;
+    transform: translateY(350px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .firstBlock {
+    top: 0px;
+    height: 5%;
+  }
+
+  .secondBlock {
+    height: 75%;
+  }
+
+  .ingredientsBtnsBox {
+    top: 0px;
+  }
+
+  .ingredientBtn {
+    border: solid 2px black;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5px;
+    min-width: 70px;
+    padding: 9px 10px 7px;
+    width: 8%;
+
+  }
+
+  .bottomBtns {
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .bottomBtns .ingredientBtn {
+    line-height: 1;
+    min-width: 100px;
+    width: 10%;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
