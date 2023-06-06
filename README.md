@@ -45,7 +45,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 ## Author:
 ### Helen Marino:
 * Github: [@helenmadev](https://github.com/helenmdev)
-* Linkedin: [Helen Mariño](www.linkedin.com/in/helenmaDev)
+* Linkedin: [Helen Mariño](https://www.linkedin.com/in/helenmadev)
 
 ## Contributing
 
